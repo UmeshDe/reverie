@@ -1642,3 +1642,56 @@ footer ul li a i{
     font-size: 18px;
     line-height: 20px;
 }
+.single-work-slider {
+	margin-bottom: 30px;
+}
+
+.single-work-slider .owl-controls{
+	height: 43px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin: auto;
+}
+
+.single-work-slider .owl-prev, .single-work-slider .owl-next{
+	display: block !important;
+	width: 30px !important;
+	height: 30px !important;
+	line-height:20px !important;
+	font-size:20px !important;
+	border-radius:0 !important;
+	opacity:1 !important;
+	background:#FFC107 !important;
+	position: absolute !important;
+}
+
+.single-work-slider .owl-prev{
+	left: 0;
+	margin-right: 10px;
+}
+
+.single-work-slider .owl-next{
+	right: 0;
+	margin-left: 10px;
+}
+
+.single-work-slider .owl-prev:hover, .single-work-slider .owl-next:hover{
+	background:#4F3B3B !important;
+}
+
+.single-work-slider .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+#slideshow > div {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
