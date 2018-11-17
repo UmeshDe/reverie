@@ -504,8 +504,8 @@ a:active{
 
 /* ----- Menus Style ---- */
 .mts-main-menu{
-    background-color: #2C353D;
-    background-color: #2C353D;
+    background-color: #292929;
+    /*background-color: #2C353D;*/
     border: 0 none;
     border-radius: 0;
     position: fixed;
