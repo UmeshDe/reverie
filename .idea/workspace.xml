@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9321cc6a-e253-4737-9b8f-874d7e5caf12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/general/ST_20161122_JSFOOD22_2758120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/general/architecture-bay-boat-326410.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/general/cargo-cargo-container-cargo-ship-1095814.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/general/pikwizard-e9793ca361f035582c3afe093734d038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/3plyNonWovenEarloopDisposableFaceMaskChinaManufacturerHubeiXtraSafety_8fe4c175-4a93-425c-9f0f-2f47d4be4c45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/High-Quality-Disposable-pp-nonwoven-caps-disposable.jpg_220x220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/PF02526_PRI01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/disposable-bouffant-cap-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/dustproof-disposable-nonwoven-bouffant-cap-1490081477-2770076.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nurse cap/nurse cap thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product1.html" beforeDir="false" afterPath="$PROJECT_DIR$/product1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product2.html" beforeDir="false" afterPath="$PROJECT_DIR$/product2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product3.html" beforeDir="false" afterPath="$PROJECT_DIR$/product3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product4.html" beforeDir="false" afterPath="$PROJECT_DIR$/product4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product5.html" beforeDir="false" afterPath="$PROJECT_DIR$/product5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product6.html" beforeDir="false" afterPath="$PROJECT_DIR$/product6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product7.html" beforeDir="false" afterPath="$PROJECT_DIR$/product7.html" afterDir="false" />
-    </list>
+    <list default="true" id="9321cc6a-e253-4737-9b8f-874d7e5caf12" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,12 +367,12 @@
       <workItem from="1543119230974" duration="2769000" />
       <workItem from="1543124507722" duration="2761000" />
       <workItem from="1543129676760" duration="4332000" />
-      <workItem from="1543141297638" duration="267000" />
+      <workItem from="1543141297638" duration="534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67612000" />
+    <option name="totallyTimeSpent" value="67879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="25" width="1837" height="1055" extended-state="6" />
