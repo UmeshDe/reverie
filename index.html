@@ -23,6 +23,56 @@
     <script src="js/respond.min.js"></script>
     <script type="text/javascript" src="js/selectivizr.js"></script>
     <![endif]-->
+    <style>
+        .popup{
+            width: 900px;
+            margin: auto;
+            text-align: center
+        }
+        .popup img{
+            width: 200px;
+            height: 200px;
+            cursor: pointer
+        }
+        .show{
+            z-index: 999;
+            display: none;
+        }
+        .show .overlay{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.66);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .show .img-show{
+            width: 600px;
+            height: 400px;
+            background: #FFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden
+        }
+        .img-show span{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .img-show img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /*End style*/
+
+    </style>
 </head>
 
 <body>
@@ -54,7 +104,7 @@
 
             <!-- navbar-collapse start-->
             <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
-                <ul class="nav navbar-nav mts-menu-wrapper" style="font-family: 'fantasy';font-style: italic">
+                <ul class="nav navbar-nav mts-menu-wrapper">
                     <li class="active">
                         <a href="#mts-slider">HOME</a>
                     </li>
@@ -94,17 +144,17 @@
         <div class="sp-slide mts-main-slides">
             <div class="mts-img-overlay"></div>
 
-            <img class="sp-image" src="images/general/banner/banner13.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="images/general/banner/banner18.jpg" alt="Slider 1"/>
 
             <h1 class="sp-layer mts-slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="mts-highlight-texts" style="font-family: 'fantasy';font-style: italic">We are one of the leading exporter of surgical products</span>
+                data-position="left" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+                <span class="mts-highlight-texts">WE ARE ON OF THE LEADING EXPORTERS OF <BR> DISPOSABLE SAFETY PRODUCTS IN INDIA</span>
             </h1>
 
-            <p class="sp-layer" style="font-family: 'fantasy'"
-            data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-            We export disposable & safety products
-            </p>
+            <!--<p class="sp-layer" style="font-family: 'fantasy'"-->
+            <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
+            <!--We export disposable & safety products-->
+            <!--</p>-->
         </div>
         <!-- Slides End -->
 
@@ -118,10 +168,10 @@
 
             <img class="sp-image" src="images/general/banner/banner17.jpg" alt="Slider 3"/>
 
-            <h1 class="sp-layer mts-slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="mts-highlight-texts" style="font-family: 'fantasy';font-style: italic">Our products have high demand in health care industry</span>
-            </h1>
+            <!--<h1 class="sp-layer mts-slider-text-big"-->
+                <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
+                <!--<span class="mts-highlight-texts" >Our products have high demand in health care industry</span>-->
+            <!--</h1>-->
             <!--<p class="sp-layer" style="font-family: 'fantasy'"-->
             <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
             <!--We offer Wide range of disposable  & safety products-->
@@ -132,35 +182,20 @@
 
             <img class="sp-image" src="images/general/banner/banner14.jpg" alt="Slider 3"/>
 
-            <h1 class="sp-layer mts-slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="mts-highlight-texts" style="font-family: 'fantasy';font-style: italic">We export products that have high demand in wellness industry</span>
-            </h1>
-
-            <p class="sp-layer" style="font-family: 'fantasy'"
-               data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                We make our clients happy
-            </p>
-        </div>
-        <div class="sp-slide mts-main-slides">
-            <div class="mts-img-overlay"></div>
-
-            <img class="sp-image" src="images/general/banner/banner12.jpg" alt="Slider 3"/>
-
             <!--<h1 class="sp-layer mts-slider-text-big"-->
-            <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
-            <!--<span class="mts-highlight-texts">MODERN & COZY DESIGN</span>-->
+                <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
+                <!--<span class="mts-highlight-texts">We export products that have high demand in wellness industry</span>-->
             <!--</h1>-->
 
-            <!--<p class="sp-layer"-->
-            <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
-            <!--SOLID - BOOTSTRAP TEMPLATE-->
+            <!--<p class="sp-layer" style="font-family: 'fantasy'"-->
+               <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
+                <!--We make our clients happy-->
             <!--</p>-->
         </div>
         <div class="sp-slide mts-main-slides">
             <div class="mts-img-overlay"></div>
 
-            <img class="sp-image" src="images/general/banner/banner15.jpg" alt="Slider 3"/>
+            <img class="sp-image" src="images/general/banner/banner55.jpeg" alt="Slider 3"/>
 
             <!--<h1 class="sp-layer mts-slider-text-big"-->
             <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
@@ -190,7 +225,23 @@
         <div class="sp-slide mts-main-slides">
             <div class="mts-img-overlay"></div>
 
-            <img class="sp-image" src="images/general/banner/banner18.jpg" alt="Slider 3"/>
+            <img class="sp-image" src="images/general/banner/banner15.jpg" alt="Slider 3"/>
+
+            <!--<h1 class="sp-layer mts-slider-text-big"-->
+            <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
+            <!--<span class="mts-highlight-texts">MODERN & COZY DESIGN</span>-->
+            <!--</h1>-->
+
+            <!--<p class="sp-layer"-->
+            <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
+            <!--SOLID - BOOTSTRAP TEMPLATE-->
+            <!--</p>-->
+        </div>
+
+        <div class="sp-slide mts-main-slides">
+            <div class="mts-img-overlay"></div>
+
+            <img class="sp-image" src="images/general/banner/banner10.jpg" alt="Slider 3"/>
 
             <!--<h1 class="sp-layer mts-slider-text-big"-->
             <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
@@ -216,6 +267,20 @@
             <!--SOLID - BOOTSTRAP THEME-->
             <!--</p>-->
         </div>
+        <div class="sp-slide mts-main-slides">
+            <div class="mts-img-overlay"></div>
+            <img class="sp-image" src="images/general/banner/banner01.jpg" alt="Slider 2"/>
+
+            <!--<h1 class="sp-layer mts-slider-text-big"-->
+            <!--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">-->
+            <!--<span class="mts-highlight-texts">VERY EFFICIENT</span>-->
+            <!--</h1>-->
+
+            <!--<p class="sp-layer"-->
+            <!--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">-->
+            <!--SOLID - BOOTSTRAP THEME-->
+            <!--</p>-->
+        </div>
         <!-- Slides End -->
 
     </div>
@@ -228,9 +293,9 @@
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 mts-section-header wow fadeInDown">
-                <h3 style="font-family: 'fantasy'"><span class="mts-highlight-text" style="font-family: 'fantasy';font-style: italic">PRODUCT</span></h3>
+                <h3 style="font-family: Baskerville;"><span class="mts-highlight-text" style="font-family: Baskerville">PRODUCT</span></h3>
                 <div class="mts-section-divider"></div>
-                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="font-family: 'fantasy';font-style: italic">Our products are manufactured by skilled professionals rich with experience and industry knowledge helping us provide industry complaint products.</p>
+                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="font-family: Baskerville;">Our products are manufactured by skilled professionals rich with experience and industry knowledge helping us provide industry complaint products.</p>
             </div>
             <!-- Section Header End -->
 
@@ -244,12 +309,12 @@
         <div id="mts-portfolio-filter" class="mts-portfolio-filter-btn-group">
             <ul>
                 <li>
-                    <a href="#" class="selected" data-filter="*" style="font-family: 'fantasy';font-style: italic">All</a><!--
-                         --><a href="#" data-filter=".web" style="font-family: 'fantasy';font-style: italic">Disposable Cap</a><!--
-                         --><a href="#" data-filter=".seo" style="font-family: 'fantasy';font-style: italic">Shoe Covers</a><!--
-                         --><a href="#" data-filter=".works" style="font-family: 'fantasy';font-style: italic">Disposable Mask</a><!--
-                         --><a href="#" data-filter=".brands" style="font-family: 'fantasy';font-style: italic">Disposable Bedsheets</a><!--
-                        --><a href="#" data-filter=".coats" style="font-family: 'fantasy';font-style: italic">Disposable Lab Coats</a>
+                    <a href="#" class="selected" data-filter="*">All</a><!--
+                         --><a href="#" data-filter=".web">Disposable Cap</a><!--
+                         --><a href="#" data-filter=".seo">Shoe Covers</a><!--
+                         --><a href="#" data-filter=".works">Disposable Mask</a><!--
+                         --><a href="#" data-filter=".brands">Disposable Bedsheets</a><!--
+                        --><a href="#" data-filter=".coats">Disposable Lab Coats</a>
                 </li>
             </ul>
         </div>
@@ -260,7 +325,7 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item web">
 
-                <img src="images/bouffantcaps/product11.jpg" alt="">
+                <img src="images/bouffantcaps/product7.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -307,7 +372,7 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item works">
 
-                <img src="images/loopmask/product4.jpg" alt="">
+                <img src="images/loopmask/product16.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -323,7 +388,7 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item brands">
 
-                <img src="images/spabedsheets/product1.jpg" alt="">
+                <img src="images/spabedsheets/product10.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -338,7 +403,7 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item coats">
 
-                <img src="images/labcoat/product6.jpg" alt="">
+                <img src="images/labcoat/product5.JPG" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -354,7 +419,7 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item web">
 
-                <img src="images/surgicalcap/product1.jpg" alt="">
+                <img src="images/surgicalcap/product18.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -369,7 +434,7 @@
 
             <div class="item mts-portfolio-item works">
 
-                <img src="images/surgicalmask/product10.jpg" alt="">
+                <img src="images/surgicalmask/product15.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
@@ -385,12 +450,12 @@
             <!-- Portfolio Items -->
             <div class="item mts-portfolio-item brands">
 
-                <img src="images/spabedsheets/product4.jpg" alt="">
+                <img src="images/nursecap/product5.jpg" alt="">
                 <div class="mts-portfolio-details-wrapper">
                     <div class="mts-portfolio-details">
                         <div class="mts-portfolio-meta-btn">
-                            <h4 style="font-family: 'fantasy';font-style: italic">Disposable Bedsheets</h4>
-                            <a href="product4.html" class="btn btn-warning btn-sm btn-color-white" target="_blank">View More</a>
+                            <h4 style="font-family: 'fantasy';font-style: italic">Nurse Cap</h4>
+                            <a href="product8.html" class="btn btn-warning btn-sm btn-color-white" target="_blank">View More</a>
                         </div>
                     </div>
                 </div>
@@ -399,18 +464,18 @@
             <!-- Portfolio Items End -->
 
             <!-- Portfolio Items -->
-            <!--<div class="item mts-portfolio-item seo brands">-->
+            <div class="item mts-portfolio-item seo brands">
 
             <!--<img src="images/img-portfolio/portfolio3.jpg" alt="">-->
-            <!--<div class="mts-portfolio-details-wrapper">-->
-            <!--<div class="mts-portfolio-details">-->
-            <!--<div class="mts-portfolio-meta-btn">-->
-            <!--<ul class="mts-work-meta">-->
-            <!--<li class="mts-lighbox"><a href="images/img-portfolio/portfolio9.jpg" class="mts-featured-work-img"><i class="fa fa-search-plus"></i></a></li>-->
-            <!--</ul>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
+            <div class="mts-portfolio-details-wrapper">
+            <div class="mts-portfolio-details">
+            <div class="mts-portfolio-meta-btn">
+            <ul class="mts-work-meta">
+            <li class="mts-lighbox"><a href="images/img-portfolio/portfolio9.jpg" class="mts-featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
 
             <!--</div>-->
             <!--&lt;!&ndash; Portfolio Items End &ndash;&gt;-->
@@ -480,14 +545,33 @@
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 mts-section-header wow fadeInDown">
-                <h3 style="font-family: 'fantasy';font-style: italic"><span class="mts-highlight-text">CERTIFICATE</span></h3>
+                <h3 style="font-family: 'Baskerville';"><span class="mts-highlight-text">CERTIFICATE</span></h3>
                 <div class="mts-section-divider"></div>
                 <!--<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque in minus distinctio dolores ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque in minus distinctio dolores ipsam.<BR>-->
                 <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque in minus distinctio dolores ipsam.</p>-->
             </div>
             <!-- Section Header End -->
 
+
+
             <div class="mts-pricing-wrapper">
+
+                <div class="col-md-4 col-sm-4 col-xs-12 mts-pricing-plans wow bounceInRight hoverer">
+                    <!--<div class="mts-pricing-titles">-->
+                    <!--&lt;!&ndash;<h2>Starter</h2>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<p><span>$7/</span>Month</p>&ndash;&gt;-->
+                    <!--</div>-->
+                    <div class="mts-pricing-service-name">
+                        <a href="images/general/certificate3.png" class="mts-featured-work-img"><img src="images/general/certificate3.png" alt="" style="height: 550px" class="mts-featured-work-img"></a>
+                        <!--<h2 class="title" style="text-align: center">GSTIN</h2>-->
+                    </div>
+
+                    <div class="bg-btn">
+                        <a href="#" class="mts-signup-btn" style="font-family: 'fantasy';font-style: italic">IEC</a>
+                    </div>
+
+
+                </div>
 
                 <!-- Plans -->
                 <div class="col-md-4 col-sm-4 col-xs-12 mts-pricing-plans wow bounceInLeft hoverer">
@@ -496,7 +580,8 @@
                     <!--&lt;!&ndash;<p><span>$7/</span>Month</p>&ndash;&gt;-->
                     <!--</div>-->
                     <div class="mts-pricing-service-name">
-                        <img src="images/general/certificate1.png" alt="" style="height: 550px">
+                        <a href="images/general/certificate1.png" class="mts-featured-work-img"><img src="images/general/certificate1.png" alt="" style="height: 550px" class="mts-featured-work-img"></a>
+                        <!--<img src="images/general/certificate1.png" alt="" style="height: 550px">-->
                         <!--<h2 class="title" style="text-align: center">GSTIN</h2>-->
                     </div>
 
@@ -513,7 +598,8 @@
                     <!--&lt;!&ndash;<p><span>$7/</span>Month</p>&ndash;&gt;-->
                     <!--</div>-->
                     <div class="mts-pricing-service-name">
-                        <img src="images/general/certificate2.png" alt="" style="height: 550px">
+                        <a href="images/general/certificate2.png" class="mts-featured-work-img"><img src="images/general/certificate2.png" alt="" style="height: 550px" class="mts-featured-work-img"></a>
+                        <!--<img src="images/general/certificate2.png" alt="" style="height: 550px">-->
                         <!--<h2 class="title" style="text-align: center">GSTIN</h2>-->
                     </div>
 
@@ -524,22 +610,7 @@
                 <!-- Plans End -->
 
                 <!-- Plans -->
-                <div class="col-md-4 col-sm-4 col-xs-12 mts-pricing-plans wow bounceInRight hoverer">
-                    <!--<div class="mts-pricing-titles">-->
-                    <!--&lt;!&ndash;<h2>Starter</h2>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p><span>$7/</span>Month</p>&ndash;&gt;-->
-                    <!--</div>-->
-                    <div class="mts-pricing-service-name">
-                        <img src="images/general/certificate3.png" alt="" style="height: 550px">
-                        <!--<h2 class="title" style="text-align: center">GSTIN</h2>-->
-                    </div>
 
-                    <div class="bg-btn">
-                        <a href="#" class="mts-signup-btn" style="font-family: 'fantasy';font-style: italic">IEC</a>
-                    </div>
-
-
-                </div>
                 <!-- Plans End -->
 
             </div>
@@ -610,9 +681,9 @@
         <div class="row">
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 mts-section-header wow fadeInDown">
-                <h3><span class="mts-highlight-text" style="font-family: 'fantasy';font-style: italic">ABOUT</span></h3>
+                <h3><span class="mts-highlight-text" style="font-family: 'Baskerville';">ABOUT</span></h3>
                 <div class="mts-section-divider"></div>
-                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="font-family: 'fantasy';font-style: italic">Reverie International Exports stands for two prime values – Quality and Service. We have imbibed a transcendental approach to the quality of products since we understand that it also represents the reputation of our customers which is in coherence with our organization as well. Our customers are like our partners and hence we emphasize on superior service with transparent communication right from the onset of contact</p>
+                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="font-family: 'Baskerville'">Reverie International Exports stands for two prime values – Quality and Service. We have imbibed a transcendental approach to the quality of products since we understand that it also represents the reputation of our customers which is in coherence with our organization as well. Our customers are like our partners and hence we emphasize on superior service with transparent communication right from the onset of contact</p>
             </div>
             <!-- Section Header End -->
 
@@ -621,26 +692,26 @@
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12 mts-custom-sec-text wow bounceInRight black-ed">
-                <p style="font-family: 'fantasy';font-style: italic">  Our impetus is on customer experience and fulfillment by offering individualization in our product range as per our patron’s conformance.</p>
+                <p style="font-family: 'Baskerville';">  Our impetus is on customer experience and fulfillment by offering individualization in our product range as per our patron’s conformance.</p>
                 <div class="row">
 
                     <div class="col-md-11">
-                        <h3 style="font-family: 'fantasy';font-style: italic">What We Offer</h3>
-                        <p style="font-family: 'fantasy';font-style: italic">We are one of the leading suppliers of high quality Disposable Safety Products catering to Medical Centers, Hospitality Industry and Wellness Centers</p>
+                        <h3 style="font-family: 'fantasy';">What We Offer</h3>
+                        <p style="font-family: 'Baskerville';">We are one of the leading suppliers of high quality Disposable Safety Products catering to medicle centers, hospitality industry and wellness centers</p>
                     </div>
                 </div>
                 <div class="row">
 
                     <div class="col-md-11">
-                        <h3 style="font-family: 'fantasy';font-style: italic">Our Goal</h3>
-                        <p style="font-family: 'fantasy';font-style: italic">We care about our environment and wish to do our bit by providing a portfolio of eco-friendly products.</p>
+                        <h3 style="font-family: 'fantasy';">Our Goal</h3>
+                        <p style="font-family: 'Baskerville';">We care about our environment and wish to do our bit by providing a portfolio of eco-friendly products.</p>
                     </div>
                 </div>
                 <div class="row">
 
                     <div class="col-md-11">
-                        <h3 style="font-family: 'fantasy';font-style: italic">Quality</h3>
-                        <p style="font-family: 'fantasy';font-style: italic">  Our products are manufactured by skilled professionals with prolific experience and industry knowledge helping us accomplish stringent quality standards.
+                        <h3 style="font-family: 'fantasy';">Quality</h3>
+                        <p style="font-family: 'Baskerville';">  Our products are manufactured by skilled professionals with prolific experience and industry knowledge helping us accomplish stringent quality standards.
                     </div>
                 </div>
             </div>
@@ -657,10 +728,9 @@
         <div class="row">
 
             <div class="col-md-6 col-sm-6 col-xs-12 mts-custom-sec-text wow bounceInRight">
-                <p style="font-family: 'fantasy';font-style: italic">Our business is customer centric with a strongly rooted value based system attributing to our quality products and services. We care about our environment and offer products which are eco-friendly.</p>
-                <p style="font-family: 'fantasy';font-style: italic">We are one of the leading suppliers of high quality Disposable Safety Products catering to Medical Centers, Hospitality Industry and Wellness Centers.
-                </p>
-                <p style="font-family: 'fantasy';font-style: italic">Our products are manufactured by skilled professionals with prolific experience and industry knowledge helping us accomplish stringent quality standards.</p>
+                <p style="font-family: 'Baskerville'">Our business is customer centric with a strongly rooted value based system attributing to our quality products and services. We care about our environment and offer products which are eco-friendly.</p>
+                <p style="font-family: 'Baskerville'">We are one of the leading suppliers of high quality Disposable Safety Products catering to Medical Centers, Hospitality Industry and Wellness Centers.</p>
+                <p style="font-family: 'Baskerville'">Our products are manufactured by skilled professionals with prolific experience and industry knowledge helping us accomplish stringent quality standards.</p>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 mts-custom-sec-img wow bounceInLeft">
                 <img src="images/general/aboutus/product1.jpg" alt="Custom Image">
@@ -790,14 +860,16 @@
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 mts-section-header wow fadeInDown mts-section-header-parallax">
-                <h3 style="font-family: 'fantasy';font-style: italic"><span class="mts-highlight-text">CONTACT US</span></h3>
-                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-ofTAet-1" style="font-family: 'fantasy';font-style: italic">Please feel free to contact if you have any queries</p>
+                <h3 style="font-family: 'Baskerville'"><span class="mts-highlight-text">CONTACT US</span></h3>
+                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-ofTAet-1" style="font-family: 'Baskerville'">Please feel free to contact if you have any queries</p>
             </div>
             <!-- Section Header End -->
 
             <div class="mts-contact-details">
 
                 <!-- Address Area End -->
+
+                <!--End image popup-->
 
                 <!-- Contact Form -->
                 <div class="col-md-6 col-sm-6 col-xs-12 mts-contact-form wow bounceInRight">
@@ -821,9 +893,9 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ducimus in rerum fugiat deserunt laboriosam tempore velit, eaque provident incidunt quisquam. Qui soluta accusantium pariatur obcaecati, harum molestiae eum, repellendus.</p>-->
                     <ul>
-                        <li><i class="fa fa-home"></i><p style="font-family: 'fantasy';font-style: italic">Sno. 94 and 95, Indira Shankar Nagari,<br> Paud Road,Kothrud,<br>Pune - 411038, Maharashtra, India</p></li>
-                        <li><i class="fa fa-phone"></i><a href="tel:+9819784265" style="font-family: 'fantasy';font-style: italic"> Richa +91 9819784265</a></li>
-                        <li><i class="fa fa-envelope-o"></i><a href="mailto:richa.gaikwad1716@gmail.com" style="font-family: 'fantasy';font-style: italic">richa.gaikwad1716@gmail.com</a></li>
+                        <li><i class="fa fa-home" style="margin-right: 10px"></i><p style="font-family: 'fantasy'">Sno. 94 and 95, Indira Shankar Nagari,<br> Paud Road,Kothrud,<br>Pune - 411038, Maharashtra, India</p></li>
+                        <li><i class="fa fa-phone" style="margin-right: 10px"></i><a href="tel:+9819784265" style="font-family: 'fantasy';font-style: italic"> Richa +91 9819784265</a></li>
+                        <li><i class="fa fa-envelope-o" style="margin-right: 10px"></i><a href="mailto:richa.gaikwad1716@gmail.com" style="font-family: 'fantasy';font-style: italic">richa.gaikwad1716@gmail.com</a></li>
                     </ul>
                 </div>
                 <!-- Contact Form End -->
@@ -839,7 +911,7 @@
         <div class="row footer-content">
             <div class="col-md-4">
                 <img class="logo" src="images/general/logo3.png" alt="logo" style="height: 250px;width: 300px">
-                <p style="font-family: 'fantasy';font-style: italic">We aim to make our clients happy by selling the best products at the best prices.we are constantly adding new products.</p>
+                <p style="font-family: 'Baskerville'">Our logo, a lotus symbolizes the purity of the heart and mind which epitomizesour work ethic.We aim to dedicatedly work towards our customers's requirenments offering only quality products and services.</p>
             </div>
             <div class="col-md-4">
                 <h3>Sections</h3>
@@ -920,6 +992,23 @@
 <script src="js/jquery.sliderPro.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        "use strict";
+
+        $(".popup img").click(function () {
+            var $src = $(this).attr("src");
+            $(".show").fadeIn();
+            $(".img-show img").attr("src", $src);
+        });
+
+        $("span, .overlay").click(function () {
+            $(".show").fadeOut();
+        });
+
+    });
+</script>
 
 </body>
 </html>

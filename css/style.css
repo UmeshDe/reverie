@@ -60,7 +60,7 @@ header.mts-page-header{
 
 /* ------ Typography Style----- */
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Raleway', cursive;
+    font-family: 'Baskerville', cursive;
     font-weight: 700;
     line-height: 1.2;
     margin-top: 0;
@@ -96,7 +96,7 @@ h5{
 }
 
 a,p,li,input,textarea{
-    font-family: 'Raleway', cursive;
+    font-family: 'Baskerville';
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -586,11 +586,11 @@ header.mts-page-header .mts-main-menu.minified{
 }
 
 .mts-main-slides h1.mts-slider-text-big{
-	font-family: "Raleway",cursive;
+	font-family: "Baskerville",cursive;
 	font-size: 65px;
 	color: #ffffff;
 	margin-top: 0;
-	margin-bottom: 25px;
+	margin-bottom: 350px;
 	font-weight: bold;
 }
 
@@ -1197,7 +1197,7 @@ header.mts-page-header .mts-main-menu.minified{
 	border: 1px solid #aaa !important;
 	padding: 15px;
 	border: none;
-	color: #ffffff !important;
+	color: #111 !important;
 }
 
 .mts-contact-section .mts-contact-form input[type='submit']{
